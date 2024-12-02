@@ -1,6 +1,6 @@
 package michaelsgroi.adventofcode2024
 
-import java.io.File
+import michaelsgroi.adventofcode.toFileLines
 import kotlin.math.abs
 
 class Day1 {
@@ -24,7 +24,7 @@ class Day1 {
 
     private fun String.toLeftAndRight(): Pair<List<Long>, List<Long>> {
         val pairs =
-            File(this).readLines().map {
+            toFileLines().map {
                 val values = it.split("   ")
                 Pair(values[0].toLong(), values[1].toLong())
             }

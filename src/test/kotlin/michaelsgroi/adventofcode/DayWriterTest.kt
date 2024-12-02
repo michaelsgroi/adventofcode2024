@@ -4,5 +4,5 @@ import org.junit.jupiter.api.Test
 
 class DayWriterTest {
     @Test
-    fun write() = DayWriter().write(2024, 1)
+    fun write() = DayWriter().write(2024, 2)
 }
